@@ -284,34 +284,17 @@ h1.hero-headline {
 
 /* HERO IMAGE PLACEHOLDER */
 .hero-image-wrap {
-  position: relative;
-}
-
-.hero-img-placeholder {
   width: 100%;
-  aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #2d3b2a 0%, #1a2518 50%, #0d1a0a 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
-.hero-img-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(255,255,255,0.015) 2px,
-    rgba(255,255,255,0.015) 4px
-  );
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
+
 
 .img-caption-text {
   font-family: 'Playfair Display', serif;
@@ -719,11 +702,9 @@ footer {
         </div>
       </div>
       <div class="hero-image-wrap">
-        <div class="hero-img-placeholder">
-          <div class="img-caption-label">Editorial Illustration</div>
-          <div class="img-caption-text">"This bill is government control! Who decides who can be a parent?!" vs "It's about child safety — a simple test and support for parents!"</div>
-        </div>
-        <p class="hero-caption">Illustration depicting the parliamentary debate over the Parenting Licensing Bill · The Daily Intel</p>
+        <img src="images/hero-image.png" alt="Hero Image" class="hero-image">
+        <p class="hero-caption">
+          Illustration depicting the parliamentary debate over the Parenting Licensing Bill · The Daily Intel</p>
       </div>
     </div>
   </div>
